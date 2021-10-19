@@ -11,7 +11,7 @@ import SwiftUI
 struct OdaApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            OdaCartView()
         }
     }
 }

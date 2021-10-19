@@ -7,18 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D45F7308271AF7350018A329 /* OdaCartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45F7307271AF7350018A329 /* OdaCartViewModel.swift */; };
+		D45F730A271B2BE40018A329 /* OdaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45F7309271B2BE40018A329 /* OdaData.swift */; };
+		D46FF02727183B1300558B85 /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D46FF02427183B1300558B85 /* Rubik-Bold.ttf */; };
+		D46FF02827183B1300558B85 /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D46FF02527183B1300558B85 /* Rubik-Medium.ttf */; };
+		D46FF02927183B1300558B85 /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D46FF02627183B1300558B85 /* Rubik-Regular.ttf */; };
+		D46FF02D2718BEB500558B85 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = D46FF02C2718BEB500558B85 /* SDWebImageSwiftUI */; };
 		D482A9B72716D93B00B45DDE /* OdaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D482A9B62716D93B00B45DDE /* OdaApp.swift */; };
-		D482A9B92716D93B00B45DDE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D482A9B82716D93B00B45DDE /* ContentView.swift */; };
+		D482A9B92716D93B00B45DDE /* OdaCartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D482A9B82716D93B00B45DDE /* OdaCartView.swift */; };
 		D482A9BB2716D93E00B45DDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D482A9BA2716D93E00B45DDE /* Assets.xcassets */; };
 		D482A9BE2716D93E00B45DDE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D482A9BD2716D93E00B45DDE /* Preview Assets.xcassets */; };
+		D4E3D2C9271C8FBF00FBE17C /* OdaCartCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E3D2C8271C8FBF00FBE17C /* OdaCartCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D45F7307271AF7350018A329 /* OdaCartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdaCartViewModel.swift; sourceTree = "<group>"; };
+		D45F7309271B2BE40018A329 /* OdaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdaData.swift; sourceTree = "<group>"; };
+		D46FF02427183B1300558B85 /* Rubik-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Bold.ttf"; sourceTree = "<group>"; };
+		D46FF02527183B1300558B85 /* Rubik-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Medium.ttf"; sourceTree = "<group>"; };
+		D46FF02627183B1300558B85 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
+		D46FF02A27183CD200558B85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D482A9B32716D93B00B45DDE /* Oda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Oda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D482A9B62716D93B00B45DDE /* OdaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdaApp.swift; sourceTree = "<group>"; };
-		D482A9B82716D93B00B45DDE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D482A9B82716D93B00B45DDE /* OdaCartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdaCartView.swift; sourceTree = "<group>"; };
 		D482A9BA2716D93E00B45DDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D482A9BD2716D93E00B45DDE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D4E3D2C8271C8FBF00FBE17C /* OdaCartCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdaCartCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,12 +40,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D46FF02D2718BEB500558B85 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D46FF02327183AF200558B85 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D46FF02427183B1300558B85 /* Rubik-Bold.ttf */,
+				D46FF02527183B1300558B85 /* Rubik-Medium.ttf */,
+				D46FF02627183B1300558B85 /* Rubik-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		D482A9AA2716D93B00B45DDE = {
 			isa = PBXGroup;
 			children = (
@@ -51,9 +76,13 @@
 		D482A9B52716D93B00B45DDE /* Oda */ = {
 			isa = PBXGroup;
 			children = (
+				D46FF02A27183CD200558B85 /* Info.plist */,
+				D482A9C42716D95100B45DDE /* View */,
+				D482A9C62716D96B00B45DDE /* ViewModel */,
+				D482A9C52716D95E00B45DDE /* Model */,
 				D482A9B62716D93B00B45DDE /* OdaApp.swift */,
-				D482A9B82716D93B00B45DDE /* ContentView.swift */,
 				D482A9BA2716D93E00B45DDE /* Assets.xcassets */,
+				D46FF02327183AF200558B85 /* Fonts */,
 				D482A9BC2716D93E00B45DDE /* Preview Content */,
 			);
 			path = Oda;
@@ -65,6 +94,31 @@
 				D482A9BD2716D93E00B45DDE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D482A9C42716D95100B45DDE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D482A9B82716D93B00B45DDE /* OdaCartView.swift */,
+				D4E3D2C8271C8FBF00FBE17C /* OdaCartCellView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D482A9C52716D95E00B45DDE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D45F7309271B2BE40018A329 /* OdaData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D482A9C62716D96B00B45DDE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D45F7307271AF7350018A329 /* OdaCartViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +137,9 @@
 			dependencies = (
 			);
 			name = Oda;
+			packageProductDependencies = (
+				D46FF02C2718BEB500558B85 /* SDWebImageSwiftUI */,
+			);
 			productName = Oda;
 			productReference = D482A9B32716D93B00B45DDE /* Oda.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +168,9 @@
 				Base,
 			);
 			mainGroup = D482A9AA2716D93B00B45DDE;
+			packageReferences = (
+				D46FF02B2718BEB500558B85 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = D482A9B42716D93B00B45DDE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,7 +186,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D482A9BE2716D93E00B45DDE /* Preview Assets.xcassets in Resources */,
+				D46FF02727183B1300558B85 /* Rubik-Bold.ttf in Resources */,
 				D482A9BB2716D93E00B45DDE /* Assets.xcassets in Resources */,
+				D46FF02927183B1300558B85 /* Rubik-Regular.ttf in Resources */,
+				D46FF02827183B1300558B85 /* Rubik-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +200,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D482A9B92716D93B00B45DDE /* ContentView.swift in Sources */,
+				D482A9B92716D93B00B45DDE /* OdaCartView.swift in Sources */,
 				D482A9B72716D93B00B45DDE /* OdaApp.swift in Sources */,
+				D45F730A271B2BE40018A329 /* OdaData.swift in Sources */,
+				D45F7308271AF7350018A329 /* OdaCartViewModel.swift in Sources */,
+				D4E3D2C9271C8FBF00FBE17C /* OdaCartCellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,7 +262,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -251,7 +317,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -272,6 +338,7 @@
 				DEVELOPMENT_TEAM = 5M25AF53JX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Oda/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -302,6 +369,7 @@
 				DEVELOPMENT_TEAM = 5M25AF53JX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Oda/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -343,6 +411,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D46FF02B2718BEB500558B85 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D46FF02C2718BEB500558B85 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D46FF02B2718BEB500558B85 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D482A9AB2716D93B00B45DDE /* Project object */;
 }
