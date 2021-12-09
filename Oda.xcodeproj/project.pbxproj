@@ -17,6 +17,7 @@
 		D482A9B92716D93B00B45DDE /* OdaCartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D482A9B82716D93B00B45DDE /* OdaCartView.swift */; };
 		D482A9BB2716D93E00B45DDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D482A9BA2716D93E00B45DDE /* Assets.xcassets */; };
 		D482A9BE2716D93E00B45DDE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D482A9BD2716D93E00B45DDE /* Preview Assets.xcassets */; };
+		D4AC6EF52761220600CB10FA /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AC6EF42761220600CB10FA /* Utils.swift */; };
 		D4E3D2C9271C8FBF00FBE17C /* OdaCartCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E3D2C8271C8FBF00FBE17C /* OdaCartCellView.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		D482A9B82716D93B00B45DDE /* OdaCartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdaCartView.swift; sourceTree = "<group>"; };
 		D482A9BA2716D93E00B45DDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D482A9BD2716D93E00B45DDE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D4AC6EF42761220600CB10FA /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		D4E3D2C8271C8FBF00FBE17C /* OdaCartCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdaCartCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +82,7 @@
 				D482A9C42716D95100B45DDE /* View */,
 				D482A9C62716D96B00B45DDE /* ViewModel */,
 				D482A9C52716D95E00B45DDE /* Model */,
+				D4AC6EF3276121D700CB10FA /* Utils */,
 				D482A9B62716D93B00B45DDE /* OdaApp.swift */,
 				D482A9BA2716D93E00B45DDE /* Assets.xcassets */,
 				D46FF02327183AF200558B85 /* Fonts */,
@@ -119,6 +122,14 @@
 				D45F7307271AF7350018A329 /* OdaCartViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D4AC6EF3276121D700CB10FA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D4AC6EF42761220600CB10FA /* Utils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +216,7 @@
 				D45F730A271B2BE40018A329 /* OdaData.swift in Sources */,
 				D45F7308271AF7350018A329 /* OdaCartViewModel.swift in Sources */,
 				D4E3D2C9271C8FBF00FBE17C /* OdaCartCellView.swift in Sources */,
+				D4AC6EF52761220600CB10FA /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

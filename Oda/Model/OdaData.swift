@@ -26,18 +26,6 @@ struct Product: Codable, Identifiable {
     let unitPriceQuantityName: String
     let images: [Images]
     let availability: Availability
-    
-    private enum CodingKeys: String, CodingKey {
-        case id
-        case name
-        case nameExtra = "name_extra"
-        case grossPrice = "gross_price"
-        case grossUnitPrice = "gross_unit_price"
-        case unitPriceQuantityAbbreviation = "unit_price_quantity_abbreviation"
-        case unitPriceQuantityName = "unit_price_quantity_name"
-        case images
-        case availability
-    }
 }
 
 struct Images: Codable {
@@ -53,13 +41,5 @@ struct Availability: Codable {
     let code: String
     let description: String
     let descriptionShort: String
-    
-    private enum CodingKeys: String, CodingKey {
-        case isAvailable = "is_available"
-        case code
-        case description
-        case descriptionShort = "description_short"
-    }
-    
 }
 

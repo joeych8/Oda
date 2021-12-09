@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct OdaApp: App {
+    
     var body: some Scene {
         WindowGroup {
             OdaCartView()

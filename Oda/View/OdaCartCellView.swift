@@ -10,8 +10,11 @@ import SDWebImageSwiftUI
 
 struct OdaCartCellView: View {
     
+    @ObservedObject var viewModel: OdaCartViewModel      //FIXME: ADDTOCART
+        
     @State var counter = 0
-    
+
+    let productId: Int      //FIXME: ADDTOCART
     let productName: String
     let productDescription: String
     let productImageUrl: String
@@ -19,25 +22,30 @@ struct OdaCartCellView: View {
     let productGrossUnitPrice: String
     let productUnitAbbreviation: String
     
+    
     var body: some View {
         
-        HStack {
+        HStack { //Big Image on click / state var open sheet / view
+            
             WebImage(url: URL(string: productImageUrl))
                 .resizable()
+                //.onTapGesture {
+                    
+                //}
                 .placeholder(Image("placeHolder"))
                 .scaledToFit()
                 .frame(width: 56.0, height: 56.0)
             
             VStack(alignment: .leading, spacing: 5) {
                 Text(productName)
-                    .foregroundColor(Color("PrimaryTextColor"))
-                    .font(.custom("Rubik-Medium", size: 14.0))
+                    .foregroundColor(Color.primaryTextColor)
+                    .font(Font.rubikMedium(size: 14.0))
                     .frame( alignment: .leading)
                     .lineLimit(1)
                 
                 Text(productDescription)
-                    .foregroundColor(Color("SecondaryTextColor"))
-                    .font(.custom("Rubik-Regular", size: 14.0))
+                    .foregroundColor(Color.secondaryTextColor)
+                    .font(Font.rubikRegular(size: 14.0))
                     .lineLimit(1)
             }
             
@@ -48,7 +56,7 @@ struct OdaCartCellView: View {
                 HStack {
                     VStack(alignment: .trailing, spacing: 5) {
                         Text("kr \(productGrossPrice)")
-                            .font(.custom("Rubik-Medium", size: 14.0))
+                            .font(Font.rubikMedium(size: 14.0))
                             .lineLimit(1)
                         
                         Group{
@@ -58,8 +66,8 @@ struct OdaCartCellView: View {
                                 Text("/\(productUnitAbbreviation)")
                                 
                             }
-                            .foregroundColor(Color("SecondaryTextColor"))
-                            .font(.custom("Rubik-Regular", size: 14.0))
+                            .foregroundColor(Color.secondaryTextColor)
+                            .font(Font.rubikRegular(size: 14.0))
                             .lineLimit(1)
                         }
                     }
@@ -70,13 +78,13 @@ struct OdaCartCellView: View {
                     } label: {
                         Image(systemName: "plus.circle.fill")
                             .resizable()
-                            .foregroundColor(Color("AccentActionColor"))
+                            .foregroundColor(Color.odaButtonColor)
                             .frame(width: 32.0, height: 32.0, alignment: .trailing)
                             .font(Font.title.weight(.light))
                     }
                 }
                 
-                // if counter equals to 1 or more, remove single plus button with 2 new buttons and a text that shows product quantity
+            // if counter equals to 1 or more, remove single plus button with 2 new buttons and a text that shows product quantity
             } else {
                 HStack{
                     Button {
@@ -85,13 +93,13 @@ struct OdaCartCellView: View {
                     } label: {
                         Image(systemName: "minus.circle.fill")
                             .resizable()
-                            .foregroundColor(Color("SecondaryTextColor"))
+                            .foregroundColor(Color.secondaryTextColor)
                             .frame(width: 32.0, height: 32.0, alignment: .center)
                     }
                     
-                    Text(String(counter))
-                        .foregroundColor(Color("PrimaryTextColor"))
-                        .font(.custom("Rubik-Medium", size: 14.0))
+                    Text(String(counter)) //TODO: counter replace with variable ?
+                        .foregroundColor(Color.primaryTextColor)
+                        .font(Font.rubikMedium(size: 14.0))
                         .lineLimit(1)
                     
                     Button {
@@ -100,23 +108,35 @@ struct OdaCartCellView: View {
                     } label: {
                         Image(systemName: "plus.circle.fill")
                             .resizable()
-                            .foregroundColor(Color("SecondaryTextColor"))
+                            .foregroundColor(Color.secondaryTextColor)
                             .frame(width: 32.0, height: 32.0, alignment: .center)
                         
                     }
                 }
             }
         }
+        
+       /* .sheet(isPresented: <#T##Binding<Bool>#>, onDismiss: {
+            <#code#>
+        }, content: {
+            //Zstack
+        }) */
+        
         .padding(.horizontal, 10)
         
     }
     
+   //FIXME: ADDTOCART
+    
     private func add() {
-        counter += 1
+        
+        //counter += 1
+        //viewModel.addProductToCart(productId: productId, productQuantity: 1)    //FIXME: ADDTOCART
     }
     
     private func subtract() {
         counter -= 1
+       // viewModel.removeFromCart(productId: productId, removeQuantity: 1)    //FIXME: ADDTOCART
     }
     
     

@@ -17,13 +17,13 @@ struct OdaCartView: View {
         NavigationView {
             
             ZStack {
-                Color("BackgroundColor").edgesIgnoringSafeArea(.all)
+                Color.odaBackgroundColor.edgesIgnoringSafeArea(.all)
                 
                 ScrollView {
                     LazyVStack {
-                        ForEach(odaCartViewModel.products, id: \Product.id) { product in
-                            
-                            OdaCartCellView(productName: product.name,
+                        ForEach(odaCartViewModel.products) { product in
+                                                                        //FIXME: ADDTOCART
+                            OdaCartCellView(viewModel: odaCartViewModel, productId: product.id, productName: product.name,
                                             productDescription: product.nameExtra,
                                             productImageUrl: product.images[0].thumbnail.url,
                                             productGrossPrice:product.grossPrice,
@@ -48,8 +48,8 @@ struct OdaCartView: View {
                             Text("kr \("N/A")")
                                 .padding(.trailing, 15)
                         }
-                        .font(.custom("Rubik-Medium", size: 14.0))
-                        .foregroundColor(Color("PrimaryTextColor"))
+                        .font(Font.rubikMedium(size: 14.0))
+                        .foregroundColor(Color.primaryTextColor)
                         
                     }
                     .padding(.top, 5)

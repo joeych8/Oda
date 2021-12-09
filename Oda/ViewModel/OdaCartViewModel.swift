@@ -6,10 +6,13 @@
 //
 
 import Foundation
+import SwiftUI
 
 class OdaCartViewModel: ObservableObject {
     
-    @Published var products = [Product]()
+    @Published var products = [Product]() 
+    
+   // @Binding var shoppingCart = [Int: Int]   //FIXME: ADDTOCART
     
     init() {
         fetchData()
@@ -21,6 +24,7 @@ class OdaCartViewModel: ObservableObject {
             let task = session.dataTask(with: url) { data, response, error in
                 if error == nil {
                     let decoder = JSONDecoder()
+                    decoder.keyDecodingStrategy = .convertFromSnakeCase //MARK: convert from snakeCase to camelCase
                     if let safeData = data {
                         do {
                             let results = try decoder.decode(OdaData.self, from: safeData)
@@ -40,16 +44,53 @@ class OdaCartViewModel: ObservableObject {
     }
     
     
+  
     
     
+    /*
+
+    func addProductToCart(productId: Int, productQuantity: Int) {
+        
+        guard let quantity = shoppingCart[productId] else {
+            
+            shoppingCart[productId] = productQuantity
+            return
+        }
+        
+        shoppingCart[productId] = quantity + productQuantity
+    
+    }
+    
+    func removeFromCart (productId: Int, removeQuantity: Int) {
+        guard let quantity = shoppingCart[productId] else {
+         return
+        }
+        
+        shoppingCart[productId] = quantity - removeQuantity
+        
+        if let newQuantity = shoppingCart[productId], newQuantity <= 0 {
+            
+            shoppingCart[productId] = nil
+        }
+        
+        }
+        
+        
+        
+    func getShoppingCart() -> (itemCount: Int, totalCost: Double) {
+        
+        //let productSum = Int(product.grossPrice)
+        
+        //konverter pris til int
+        //multipliser pris per produkt med antall
+        //summer alle priser
+        
+        return (shoppingCart.count, 23.33 )
+        
+    }
     
     
-    
-    
-    
-    
-    
-    
+    */
     
     
 }
