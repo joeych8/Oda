@@ -10,16 +10,15 @@ import SwiftUI
 
 class OdaCartViewModel: ObservableObject {
     
-    @Published var products = [Product]() 
-    
-   // @Binding var shoppingCart = [Int: Int]   //FIXME: ADDTOCART
+    @Published var products = [Product]()
+    @Published var shoppingCart = [Int: Int]()
     
     init() {
         fetchData()
     }
-    
+
     func fetchData() {
-        if let url = URL(string: "https://api.jsonbin.io/b/60832bec4465377a6bc6b6e6") {
+        if let url = URL(string: "https://api.jsonbin.io/b/608071a7a2213a0c1428343f/1") {
             let session = URLSession(configuration: .default)
             let task = session.dataTask(with: url) { data, response, error in
                 if error == nil {
@@ -43,55 +42,21 @@ class OdaCartViewModel: ObservableObject {
         }
     }
     
-    
-  
-    
-    
-    /*
-
-    func addProductToCart(productId: Int, productQuantity: Int) {
-        
-        guard let quantity = shoppingCart[productId] else {
-            
-            shoppingCart[productId] = productQuantity
-            return
-        }
-        
-        shoppingCart[productId] = quantity + productQuantity
-    
-    }
-    
-    func removeFromCart (productId: Int, removeQuantity: Int) {
-        guard let quantity = shoppingCart[productId] else {
-         return
-        }
-        
-        shoppingCart[productId] = quantity - removeQuantity
-        
-        if let newQuantity = shoppingCart[productId], newQuantity <= 0 {
-            
-            shoppingCart[productId] = nil
-        }
-        
-        }
-        
-        
-        
     func getShoppingCart() -> (itemCount: Int, totalCost: Double) {
         
-        //let productSum = Int(product.grossPrice)
+        let itemCount = shoppingCart.compactMap({$0.value}).reduce(0, +)
+        var totalCost: Double = 0
         
-        //konverter pris til int
-        //multipliser pris per produkt med antall
-        //summer alle priser
+        for shoppingCartProduct in shoppingCart {
+            if let product = products.filter({$0.id == shoppingCartProduct.key}).first,
+               let productPrice = Double(product.grossPrice) {
+                totalCost += Double(shoppingCartProduct.value) * productPrice
+            }
+        }
+        let totalCostTwoDecimals = Double(round(100 * totalCost) / 100)
         
-        return (shoppingCart.count, 23.33 )
-        
+        return (itemCount, totalCostTwoDecimals)
     }
-    
-    
-    */
-    
     
 }
 

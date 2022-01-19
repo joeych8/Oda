@@ -13,7 +13,10 @@ extension Color {
     static let odaButtonColor = Color("AccentActionColor")
     static let odaBackgroundColor = Color("BackgroundColor")
     static let odaOutOfStockTextColor = Color("OutOfStockTextColor")
-    
+    static let odaDiscountedTextColor = Color("DiscountTextColor")
+    static let odaScrollViewBackgroundColor = Color("OdaScrollViewBackgroundColor")
+    static let odaDiscountBannerBackground = Color("OdaDiscountBannerColor")
+    static let odaDiscountBannerTextColor = Color("OdaDiscountBannerTextColor")
 }
 
 
@@ -29,5 +32,4 @@ extension Font {
     static func rubikBold(size: CGFloat) -> Font {
         return Font.custom("Rubik-Bold", size: size)
     }
-    
 }

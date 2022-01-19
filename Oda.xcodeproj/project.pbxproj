@@ -7,33 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D43825FA2766599D00539EE8 /* OdaLargeImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43825F92766599D00539EE8 /* OdaLargeImageView.swift */; };
 		D45F7308271AF7350018A329 /* OdaCartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45F7307271AF7350018A329 /* OdaCartViewModel.swift */; };
 		D45F730A271B2BE40018A329 /* OdaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45F7309271B2BE40018A329 /* OdaData.swift */; };
 		D46FF02727183B1300558B85 /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D46FF02427183B1300558B85 /* Rubik-Bold.ttf */; };
 		D46FF02827183B1300558B85 /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D46FF02527183B1300558B85 /* Rubik-Medium.ttf */; };
 		D46FF02927183B1300558B85 /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D46FF02627183B1300558B85 /* Rubik-Regular.ttf */; };
 		D46FF02D2718BEB500558B85 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = D46FF02C2718BEB500558B85 /* SDWebImageSwiftUI */; };
+		D4829E092769103D00A7FAF9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4829E082769103D00A7FAF9 /* Constants.swift */; };
+		D4829E0B2769564D00A7FAF9 /* OdaDiscountBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4829E0A2769564D00A7FAF9 /* OdaDiscountBanner.swift */; };
 		D482A9B72716D93B00B45DDE /* OdaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D482A9B62716D93B00B45DDE /* OdaApp.swift */; };
 		D482A9B92716D93B00B45DDE /* OdaCartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D482A9B82716D93B00B45DDE /* OdaCartView.swift */; };
 		D482A9BB2716D93E00B45DDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D482A9BA2716D93E00B45DDE /* Assets.xcassets */; };
 		D482A9BE2716D93E00B45DDE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D482A9BD2716D93E00B45DDE /* Preview Assets.xcassets */; };
-		D4AC6EF52761220600CB10FA /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AC6EF42761220600CB10FA /* Utils.swift */; };
+		D4AC6EF52761220600CB10FA /* Color&Font+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AC6EF42761220600CB10FA /* Color&Font+Extensions.swift */; };
 		D4E3D2C9271C8FBF00FBE17C /* OdaCartCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E3D2C8271C8FBF00FBE17C /* OdaCartCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D43825F92766599D00539EE8 /* OdaLargeImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdaLargeImageView.swift; sourceTree = "<group>"; };
 		D45F7307271AF7350018A329 /* OdaCartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdaCartViewModel.swift; sourceTree = "<group>"; };
 		D45F7309271B2BE40018A329 /* OdaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdaData.swift; sourceTree = "<group>"; };
 		D46FF02427183B1300558B85 /* Rubik-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Bold.ttf"; sourceTree = "<group>"; };
 		D46FF02527183B1300558B85 /* Rubik-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Medium.ttf"; sourceTree = "<group>"; };
 		D46FF02627183B1300558B85 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
 		D46FF02A27183CD200558B85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D4829E082769103D00A7FAF9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D4829E0A2769564D00A7FAF9 /* OdaDiscountBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdaDiscountBanner.swift; sourceTree = "<group>"; };
 		D482A9B32716D93B00B45DDE /* Oda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Oda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D482A9B62716D93B00B45DDE /* OdaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdaApp.swift; sourceTree = "<group>"; };
 		D482A9B82716D93B00B45DDE /* OdaCartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdaCartView.swift; sourceTree = "<group>"; };
 		D482A9BA2716D93E00B45DDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D482A9BD2716D93E00B45DDE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		D4AC6EF42761220600CB10FA /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		D4AC6EF42761220600CB10FA /* Color&Font+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color&Font+Extensions.swift"; sourceTree = "<group>"; };
 		D4E3D2C8271C8FBF00FBE17C /* OdaCartCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdaCartCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,6 +55,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D437E77D276A4B4800DB0154 /* CustomShapes */ = {
+			isa = PBXGroup;
+			children = (
+				D4829E0A2769564D00A7FAF9 /* OdaDiscountBanner.swift */,
+			);
+			path = CustomShapes;
+			sourceTree = "<group>";
+		};
+		D437E77E276A4B9300DB0154 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				D4829E082769103D00A7FAF9 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		D46FF02327183AF200558B85 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +105,8 @@
 				D482A9C62716D96B00B45DDE /* ViewModel */,
 				D482A9C52716D95E00B45DDE /* Model */,
 				D4AC6EF3276121D700CB10FA /* Utils */,
+				D437E77D276A4B4800DB0154 /* CustomShapes */,
+				D437E77E276A4B9300DB0154 /* Constants */,
 				D482A9B62716D93B00B45DDE /* OdaApp.swift */,
 				D482A9BA2716D93E00B45DDE /* Assets.xcassets */,
 				D46FF02327183AF200558B85 /* Fonts */,
@@ -104,6 +128,7 @@
 			children = (
 				D482A9B82716D93B00B45DDE /* OdaCartView.swift */,
 				D4E3D2C8271C8FBF00FBE17C /* OdaCartCellView.swift */,
+				D43825F92766599D00539EE8 /* OdaLargeImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -127,7 +152,7 @@
 		D4AC6EF3276121D700CB10FA /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				D4AC6EF42761220600CB10FA /* Utils.swift */,
+				D4AC6EF42761220600CB10FA /* Color&Font+Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -213,10 +238,13 @@
 			files = (
 				D482A9B92716D93B00B45DDE /* OdaCartView.swift in Sources */,
 				D482A9B72716D93B00B45DDE /* OdaApp.swift in Sources */,
+				D43825FA2766599D00539EE8 /* OdaLargeImageView.swift in Sources */,
 				D45F730A271B2BE40018A329 /* OdaData.swift in Sources */,
+				D4829E0B2769564D00A7FAF9 /* OdaDiscountBanner.swift in Sources */,
 				D45F7308271AF7350018A329 /* OdaCartViewModel.swift in Sources */,
 				D4E3D2C9271C8FBF00FBE17C /* OdaCartCellView.swift in Sources */,
-				D4AC6EF52761220600CB10FA /* Utils.swift in Sources */,
+				D4AC6EF52761220600CB10FA /* Color&Font+Extensions.swift in Sources */,
+				D4829E092769103D00A7FAF9 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

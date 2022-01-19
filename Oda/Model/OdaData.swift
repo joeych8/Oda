@@ -25,6 +25,7 @@ struct Product: Codable, Identifiable {
     let unitPriceQuantityAbbreviation: String
     let unitPriceQuantityName: String
     let images: [Images]
+    let discount: Discount?
     let availability: Availability
 }
 
@@ -34,6 +35,13 @@ struct Images: Codable {
 
 struct Thumbnail: Codable {
     let url: String
+}
+
+struct Discount: Codable {
+    let isDiscounted: Bool
+    let undiscountedGrossPrice: String
+    let undiscountedGrossUnitPrice: String
+    let descriptionShort: String
 }
 
 struct Availability: Codable {
