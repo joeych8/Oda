@@ -1,7 +1,10 @@
 # Oda shopping cart - iOS app in swift with swiftUI
 
 A shopping cart that calculates the total price of the groceries added. 
-NOTE: The API that was used for this project is no longer available.
+
+## Screenshots
+
+<img src="images/Screenshot1.png" width="200">
 
 ## Purpose
 
