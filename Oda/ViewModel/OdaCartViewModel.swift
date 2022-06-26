@@ -18,7 +18,7 @@ class OdaCartViewModel: ObservableObject {
     }
 
     func fetchData() {
-        if let url = URL(string: "https://api.jsonbin.io/b/608071a7a2213a0c1428343f/1") {
+        if let url = URL(string: "https://api.npoint.io/d4e0a014b1cfc5254bcb") {
             let session = URLSession(configuration: .default)
             let task = session.dataTask(with: url) { data, response, error in
                 if error == nil {
